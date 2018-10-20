@@ -1,0 +1,43 @@
+{
+  "printWidth": 120,
+  "overrides": [
+    {
+      "files": "*.{js,jsx,ts,tsx}",
+      "options": {
+        "tabWidth": 4,
+        "singleQuote": true,
+        "useTabs": true
+      }
+    },
+    {
+      "files": "*.{jsx,tsx}",
+      "options": {
+        "jsxBracketSameLine": true
+      }
+    },
+    {
+      "files": "*.{js,jsx}",
+      "options": {
+        "parser": "babylon"
+      }
+    },
+    {
+      "files": "*.{ts,tsx}",
+      "options": {
+        "parser": "typescript"
+      }
+    },
+    {
+      "files": [".*.json", "*.json"],
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": "*.md",
+      "options": {
+        "parser": "markdown"
+      }
+    }
+  ]
+}
