@@ -6,8 +6,14 @@ import { createBrowserHistory } from 'history';
 import { ConnectedRouter, connectRouter, routerMiddleware } from 'connected-react-router';
 import thunkMiddleware from 'redux-thunk';
 import HotWire from 'hot-wire';
+import { IntlProvider, addLocaleData } from 'react-intl';
+
+import * as plLocaleData from 'react-intl/locale-data/pl';
 
 import './assets/scss/style.css';
+
+import pl from './app/core/i18n/pl';
+// import en from './app/core/i18n/en';
 
 // modules:
 import { module as baseModule } from './app/base/base.module';
@@ -16,6 +22,9 @@ import { module as coreModule } from './app/core/core.module';
 
 import App from './app/routing.component';
 import registerServiceWorker from './registerServiceWorker';
+import flattenObject from './app/core/utils/flettenObject';
+
+addLocaleData(plLocaleData);
 
 const { services: baseServices, reducers: baseReducers } = baseModule();
 const { services: commonServices } = commonModule();
@@ -55,9 +64,11 @@ container.then((services: any) => {
 	const render = (Component: any) =>
 		ReactDOM.render(
 			<Provider store={store}>
-				<ConnectedRouter history={history}>
-					<Component />
-				</ConnectedRouter>
+				<IntlProvider locale="pl" messages={flattenObject(pl)}>
+					<ConnectedRouter history={history}>
+						<Component />
+					</ConnectedRouter>
+				</IntlProvider>
 			</Provider>,
 			document.getElementById('root')
 		);

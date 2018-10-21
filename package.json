@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/react-intl": "^2.3.11",
     "@types/react-loadable": "^5.4.1",
     "@types/react-router-dom": "^4.3.1",
     "axios": "^0.18.0",
