@@ -1,6 +1,6 @@
 export const sessionReducer = (
 	state = {
-		isAuthenticated: true
+		isAuthenticated: false
 	},
 	action
 ) => {

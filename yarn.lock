@@ -135,6 +135,10 @@
     "@types/uglify-js" "*"
     source-map "^0.6.0"
 
+"@types/yup@^0.26.0":
+  version "0.26.0"
+  resolved "https://registry.yarnpkg.com/@types/yup/-/yup-0.26.0.tgz#7d3d8a4dd61875dfd3a7fc76ec8d1aa8722d6131"
+
 "@vxna/mini-html-webpack-template@^0.1.7":
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/@vxna/mini-html-webpack-template/-/mini-html-webpack-template-0.1.7.tgz#2a8270e513ee14f395cc17c2ce22ced383c45d22"

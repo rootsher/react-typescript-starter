@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import ProtectedRoute from './protected-route.template';
 
 interface IProps {
-	path: string;
+	path?: string;
 	session: { isAuthenticated: boolean };
 }
 
