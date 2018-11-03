@@ -15,7 +15,7 @@
     "hot-wire": "^0.0.2",
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
-    "react": "^16.4.2",
+    "react": "^16.6.0",
     "react-bootstrap": "^0.32.1",
     "react-dev-utils": "^5.0.2",
     "react-dom": "^16.4.2",
